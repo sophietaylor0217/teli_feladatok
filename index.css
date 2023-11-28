@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
 body {
     background-image: url(GRID_TABLAZAT/kepek/hatter.jpg)
 }
@@ -10,9 +16,12 @@ body {
 
 .gomb {
     color: white;
+    margin-top: 0.4rem;
+    
 }
 
 .gombok{
+    
     width: 80%;
     display: list-item;
     justify-content: auto;
@@ -24,7 +33,7 @@ body {
     padding-left: 1rem;
     padding-right: 1rem;
     margin: 0.5rem;
-    border-radius: 2rem;
+    
     background-color: rgb(0, 153, 255);
     list-style-type: none;
 }
@@ -51,19 +60,26 @@ header {
 
 .grid {
     display: grid;
-    grid-template-columns: 0.7fr 1.3fr 1.5fr;
+    grid-template-columns: 0.7fr 1.2fr 1.2fr;
     background-color: white;
 }
 
+.táblázat {
+    margin-top: 1rem;
+}
+
 table {
-    width: 100%;
     margin-left: 1rem ;
+    width: 100%;    
     border-collapse: collapse;
-    
 }
 
 tr:nth-child(odd) {
     background-color: rgb(196, 245, 253);
+}
+
+tr {
+    border-bottom: 1px solid rgb(72, 72, 227);
 }
 
 h2 {
@@ -73,6 +89,7 @@ h2 {
 .vers {
     padding: 2rem;
     margin-left: 2rem;
+    border-top: 1px solid rgb(182, 182, 182);
     border-left: 1px solid rgb(182, 182, 182);
     padding-left: 1rem;
     font-size: 0.9rem;
@@ -85,3 +102,91 @@ footer{
     height: 2rem;
 }
 
+@media only screen and (min-width: 1025px) {
+    body {
+        background-image: url(GRID_TABLAZAT/kepek/hatter.jpg)
+    }
+    
+    .container {
+        max-width: 900px;
+        margin: auto;    
+    }
+    
+    .gomb {
+        color: white;
+    }
+    
+    .gombok{
+        width: 80%;
+        display: list-item;
+        justify-content: auto;
+        text-align: center;
+        border: 32px;
+        font-size: 20px;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: 0.5rem;
+        border-radius: 2rem;
+        background-color: rgb(0, 153, 255);
+        list-style-type: none;
+    }
+    
+    b {
+        text-align: center;
+        border: 32px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+    
+    
+    
+    header {
+        background-image: url(GRID_TABLAZAT/kepek/fejlec.jpg);
+        width: 100%;
+        max-height: 30px;    
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+        text-align: center;
+        color: white;
+        text-shadow: 1px 1px rgb(102, 102, 102);
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: 0.7fr 1.2fr 1.2fr;
+        background-color: white;
+    }
+    
+    table {
+        width: 100%;
+        margin-left: 1rem ;
+        border-collapse: collapse;
+        
+    }
+    
+    tr:nth-child(odd) {
+        background-color: rgb(196, 245, 253);
+    }
+    
+    h2 {
+        font-size: 1.1rem;
+    }
+    
+    .vers {
+        padding: 2rem;
+        margin-left: 2rem;
+        border-left: 1px solid rgb(182, 182, 182);
+        padding-left: 1rem;
+        font-size: 0.9rem;
+    }
+    
+    footer{
+        text-align: center;
+        padding-top: 1rem;
+        background-color: rgb(0, 153, 255);
+        height: 2rem;
+    }
+    
+}

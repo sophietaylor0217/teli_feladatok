@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../GRID_TABLAZAT"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "teli_feladatok"
+	}
+}
